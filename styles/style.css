@@ -1,5 +1,4 @@
-
-:root{
+:root {
     --color-primario: #F3F5FC;
 }
 
@@ -11,84 +10,104 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     color: #495057;
 }
 
-body{
+body {
     background-color: var(--color-primario);
     margin: 2.5rem;
-    padding-bottom: 4rem; /* Espacio para evitar que el footer sobreponga el contenido */
+    padding-bottom: 4rem;
+    /* Espacio para evitar que el footer sobreponga el contenido */
 
 }
 
 main {
-    flex: 1; /* Ocupa todo el espacio restante, empujando el footer hacia abajo */
+    flex: 1;
+    /* Ocupa todo el espacio restante, empujando el footer hacia abajo */
 }
 
-.contenido__respuesta{
-    overflow: hidden;   /* Evita que el contenido salga del div */
+.contenido__respuesta {
+    overflow: hidden;
+    /* Evita que el contenido salga del div */
     background-color: #FFFFFF;
     border-radius: 2rem;
     position: absolute;
     right: 2.5rem;
     top: 2.5rem;
     width: 25rem;
-    height: calc(100% - 7.5rem); /* Resta el margen superior e inferior */
-    display: flex;              /* Activa el modo flexbox */
-    flex-direction: column;     /* Alinea los elementos en una columna (verticalmente) */
-    justify-content: center;    /* Centra los elementos verticalmente */
-    align-items: center;        /* Centra los elementos horizontalmente */
-    text-align: center;         /* Centra el texto dentro de los elementos */
- }
+    height: calc(100% - 7.5rem);
+    /* Resta el margen superior e inferior */
+    display: flex;
+    /* Activa el modo flexbox */
+    flex-direction: column;
+    /* Alinea los elementos en una columna (verticalmente) */
+    justify-content: center;
+    /* Centra los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    text-align: center;
+    /* Centra el texto dentro de los elementos */
+}
 
-.contenido__texto{
+.contenido__texto {
     border-radius: 2rem;
     position: absolute;
     left: 10.2rem;
     top: 7.5rem;
     width: 35rem;
-    height: calc(100% - 22.5rem); /* Resta el margen superior e inferior */
+    height: calc(100% - 22.5rem);
+    /* Resta el margen superior e inferior */
     border-radius: 1rem;
     padding: 1.5rem;
 }
 
 textarea::placeholder {
-    color: #0A3871;         /* Color del texto del placeholder */
-    font-style: italic;  /* Estilo de fuente del placeholder */
-    
-}
-
-.contenido__respuesta__imagen{
-    margin: 15.188rem 2rem 2rem 2rem; /* Aplica los márgenes que especificaste */
-   max-width: calc(100% - 4rem); /* Resta los márgenes derecho e izquierdo del ancho total del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Asegura que la imagen se comporte como un bloque y respete el margen */
+    color: #0A3871;
+    /* Color del texto del placeholder */
+    font-style: italic;
+    /* Estilo de fuente del placeholder */
 
 }
 
-.contenido__respuesta__titulo{
-    margin: 2rem 2rem 0rem 2rem; 
+.contenido__respuesta__imagen {
+    margin: 15.188rem 2rem 2rem 2rem;
+    /* Aplica los márgenes que especificaste */
+    max-width: calc(100% - 4rem);
+    /* Resta los márgenes derecho e izquierdo del ancho total del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Asegura que la imagen se comporte como un bloque y respete el margen */
+
+}
+
+.contenido__respuesta__titulo {
+    margin: 2rem 2rem 0rem 2rem;
     color: #343A40;
 }
-.contenido__respuesta__indicacion{
-    margin: 1rem 2rem 15.188rem 2rem; 
+
+.contenido__respuesta__indicacion {
+    margin: 1rem 2rem 15.188rem 2rem;
     color: #495057;
 }
 
-.contenido__respuesta__texto{
-    width: calc(100% - 2rem); /* Ajusta el ancho del textarea para que no sobrepase el div */
-    height: 80%; /* Ajusta la altura según sea necesario */
+.contenido__respuesta__texto {
+    width: calc(100% - 2rem);
+    /* Ajusta el ancho del textarea para que no sobrepase el div */
+    height: 80%;
+    /* Ajusta la altura según sea necesario */
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid #ccc;
 }
 
-.contenido__interaccion__boton__encriptar{
+.contenido__interaccion__boton__encriptar {
     margin-right: 1.4rem;
 }
+
 .contenido__respuesta__boton,
 .contenido__interaccion__boton__encriptar,
 .contenido__interaccion__boton__desencriptar {
@@ -101,12 +120,14 @@ textarea::placeholder {
 }
 
 
-.contenido__interaccion{
+.contenido__interaccion {
     position: absolute;
     left: 12rem;
     bottom: 7.625rem;
-    right: auto; /* Cambia a auto si estás posicionando a la derecha */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    right: auto;
+    /* Cambia a auto si estás posicionando a la derecha */
+    box-sizing: border-box;
+    /* Incluye padding y border en el tamaño total */
 }
 
 
@@ -116,11 +137,13 @@ textarea::placeholder {
     color: #FFFFFF;
 }
 
-.footer{
-    position: fixed; /* Fija el footer en la parte inferior */
+.footer {
+    position: fixed;
+    /* Fija el footer en la parte inferior */
     bottom: 0;
     left: 0;
-    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    width: 100vw;
+    /* Ocupa todo el ancho de la ventana */
     background-color: #343A40;
     color: white;
     text-align: center;
@@ -137,9 +160,171 @@ textarea::placeholder {
     border: 1px solid #ccc;
     border-radius: 1rem;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.popup-boton{
+    margin-top: 2rem;
+    background-color: #D8DFE8;
+    border-radius: 1rem;
+    color: #0A3871;
+    padding: 1rem;
+    width: 15rem;
 }
 
 .popup.active {
     display: block;
+}
+/* Tabletas (entre 540px y 1200px) */
+@media (min-width: 540px) and (max-width: 1200px) {
+
+    
+    * {
+        padding: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+
+    header{
+        margin: 40px;
+    }
+    footer{
+        margin: 0;
+    }
+
+.contenido-main{
+    margin: 40px;
+}
+    .contenido__respuesta__imagen {
+        display: none;
+        /* Oculta la imagen en pantallas menores a 1200px de ancho */
+    }
+
+    .contenido__respuesta {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+       
+
+    }
+    .contenido__respuesta__texto{
+        margin-top: 20px;
+    }
+    .contenido {
+        flex-direction: column;
+        max-width: 1200px;
+        align-items: center;
+    }
+
+    .contenido__interaccion {
+        position: relative;
+        max-width: 1200px;
+        margin-top: 5%;
+        left: 0;
+        top: 0;
+    }
+
+    .contenido__texto {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        overflow: hidden;
+        /* Evita que el contenido salga del div */
+        left: 0;
+        top: 0;
+
+    }
+
+    .contenido__respuesta__boton,
+    .contenido__interaccion__boton__encriptar,
+    .contenido__interaccion__boton__desencriptar {
+        padding: 1rem;
+        width: 35%;
+        margin-left: 10%;
+    }
+
+.contenido__respuesta__boton{
+    margin-bottom: 20px;
+  
+}
+
+}
+
+
+/* Celulares (por debajo de 540px) */
+@media (max-width: 540px) {
+    
+    * {
+        padding: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+
+    header{
+        margin: 40px;
+    }
+    footer{
+        margin: 0;
+    }
+
+.contenido-main{
+    margin: 40px;
+}
+    .contenido__respuesta__imagen {
+        display: none;
+        /* Oculta la imagen en pantallas menores a 1200px de ancho */
+    }
+
+    .contenido__respuesta {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+       
+
+    }
+    .contenido__respuesta__texto{
+        margin-top: 20px;
+    }
+    .contenido {
+        flex-direction: column;
+        max-width: 1200px;
+        align-items: center;
+    }
+
+    .contenido__interaccion {
+        position: relative;
+        max-width: 1200px;
+        margin-top: 5%;
+        left: 0;
+        top: 0;
+    }
+
+    .contenido__texto {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        overflow: hidden;
+        /* Evita que el contenido salga del div */
+        left: 0;
+        top: 0;
+
+    }
+
+    .contenido__respuesta__boton,
+    .contenido__interaccion__boton__encriptar,
+    .contenido__interaccion__boton__desencriptar {
+        padding: 1rem;
+        width: 100%;
+    
+    }
+
+.contenido__respuesta__boton{
+    margin-bottom: 20px;
+    width: 80%;
+}
+
 }

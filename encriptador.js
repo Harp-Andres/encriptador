@@ -47,7 +47,6 @@ encriptarBtn.addEventListener('click', () => {
     if (validateText(text)) {
         const textoEncriptado = encriptarTexto(text);
         cambiarDiseñoRespuesta(textoEncriptado);
-        alert('Texto encriptado');
     } else {
         showPopup();
         textarea.value='';
@@ -60,7 +59,6 @@ desencriptarBtn.addEventListener('click', () => {
     if (validateText(text)) {
         const textoDesencriptado = desencriptarTexto(text);
         cambiarDiseñoRespuesta(textoDesencriptado);
-        alert('Texto desencriptado');
     } else {
         showPopup();
         textarea.value='';
@@ -87,7 +85,6 @@ function cambiarDiseñoRespuesta(texto){
         copyButton.textContent = 'Copiar';
         copyButton.addEventListener('click', () => {
             navigator.clipboard.writeText(newTextarea.value)
-                .then(() => alert('Texto copiado al portapapeles'))
                 .catch(err => alert('Error al copiar el texto: ' + err));
         });
         respuestaDiv.appendChild(newTextarea);
